@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+</head>
+<style>
+    /* CSS RESET */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(Images/sergi.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+       
+        
+       
+    }
+
+
+    /* left element */
+    .left {
+
+        display: inline-block;
+        height: 30px;
+        width: 100px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        
+    }
+
+    /* logo image */
+    .left img {
+        width: 100px;
+    }
+
+    /* Text */
+    .text {
+        font-size: 25px;
+        font-family: monospace;
+        font-weight: bold;
+        color: gold;
+        line-height: 66%;
+        cursor: pointer;
+    }
+
+    .center {
+
+        display: block;
+        margin: 0px auto;
+        width: 450px;
+    }
+
+    /* list */
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+
+
+    }
+
+    /* list link */
+    .navbar li a {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 1px 9px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: blue;
+
+
+
+    }
+
+    /* hover  */
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: azure;
+    }
+
+    /* Right element */
+    .right {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+       
+
+    }
+
+    /* button  */
+    .btn {
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(8, 12, 238);
+        
+
+    }
+
+    /* button hover */
+    .btn:hover {
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Left -->
+        <div class="left">
+            <img src="Images/logogym.jpg" alt="">
+            <div class="text">Sahitya Fitness</div>
+        </div>
+        <!-- Center -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Diet Plan</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <!-- Right  -->
+        <div class="right">
+            <button class="btn">Register</button>
+        </div>
+    </header>
+</body>
+
+</html>
