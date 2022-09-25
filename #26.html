@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        position: relative;
+    }
+
+    .navbar::before {
+        width: 1%;
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        margin: -12px -8px;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 5px 50px;
+        margin: 2px 3px;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: orangered;
+
+    }
+
+    .navbar ul li a:hover {
+        font-size: 36px;
+        background-color: azure;
+        color: red;
+        border-radius: 50%;
+    }
+
+    .logo {
+
+        margin: 10px 10px;
+    }
+
+    .logo img {
+        border-radius: 66%;
+    }
+
+    #mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 2px;
+        height: 756px;
+
+    }
+
+    #mid::before {
+        content: "";
+        background: url(Images/food15.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.66;
+
+    }
+
+    .heading {
+        font-size: 66px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .btn {
+        font-size: 26px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 26px;
+        background-color: chocolate;
+    }
+
+    #mid p {
+        font-size: 26px
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: azure;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 36px;
+    }
+
+    #services {
+        display: flex;
+        align-items: center;
+    }
+    #head{
+        text-align: center;
+    }
+
+    .box {
+        border: 6px solid rgb(143, 142, 142);
+        margin: 2px 6px;
+        padding: 5px 56px;
+        border-radius: 16%;
+    }
+
+    .box img {
+        border-radius: 26%;
+        height: 226px;
+       
+        
+       
+      
+
+    }
+  
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/flogo3.png" alt="">
+        </div>
+        <ul>
+            <li class="list"><a href="#">Home</a></li>
+            <li class="list"><a href="#">About Us</a></li>
+            <li class="list"><a href="#">My Orders</a></li>
+            <li class="list"><a href="#">Why Us?</a></li>
+        </ul>
+    </nav>
+    <section id="mid">
+        <h1 class="heading">Welcome to My Food Arena</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae earum dolore molestiae voluptas
+            magnam iste ducimus eos? Harum, eveniet officiis officia sunt quos repellendus repellat.</p>
+        <button class="btn">ORDER HERE</button>
+    </section>
+
+    <h1 class="heading" id="head">OUR SERVICES</h1>
+    <section id="services">
+        <div class="box" id="box1">
+            <h1 class="heading">Food Delivery</h1>
+            <img src="Images/food16.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore esse harum aspernatur modi ipsa a, iste tempore recusandae minus, assumenda, necessitatibus cupiditate adipisci maxime optio.</p>
+        </div>
+        <div class="box" id="box2">
+            <h1 class="heading">Come here & PickUp</h1>
+            <img src="Images/food18.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio fugiat illum fuga consequatur, nostrum molestiae ducimus dolor beatae asperiores cumque officia veniam deserunt modi esse.</p>
+        </div>
+        <div class="box" id="box3">
+            <h1 class="heading">Come here & Eat</h1>
+            <img src="Images/food17.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam perspiciatis voluptas. Repudiandae alias suscipit tempore qui modi soluta error commodi voluptate veniam delectus! Explicabo, mollitia!</p>
+        </div>
+
+        </div>
+    </section>
+
+    
+    
+    
+
+</body>
+
+</html>

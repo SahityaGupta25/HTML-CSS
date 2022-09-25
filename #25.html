@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+<style>
+    .navbar{
+        display: flex;
+        position: relative;
+    }
+    .navbar::before{
+        width: 1%;
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100% ;
+        width: 100%;
+        z-index: -1;
+        margin: -12px -8px;
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul li{
+        list-style: none;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        padding: 5px 50px;
+        margin: 2px 3px;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: orangered;
+
+    }
+    .navbar ul li a:hover{
+        font-size: 36px;
+        background-color: azure;
+        color: red;
+        border-radius: 50%;
+    }
+    .logo{
+        
+        margin: 10px 10px;
+    }
+    .logo img{
+        border-radius: 66%;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/flogo3.png" alt="">
+        </div>
+        <ul>
+            <li class="list"><a href="#">Home</a></li>
+            <li class="list"><a href="#">About Us</a></li>
+            <li class="list"><a href="#">My Orders</a></li>
+            <li class="list"><a href="#">Why Us?</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
