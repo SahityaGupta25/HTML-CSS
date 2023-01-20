@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Rowdies&family=Rubik:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
     <style>
+        body{
+            background-color: rgb(221, 221, 221);
+        }
+        .parent {
+            
+            width: 300px;
+            margin: 100px auto;
+            background-color: rgb(252, 252, 252);
+            box-shadow: 5px 7px 16px silver;
+            border-radius: 16px;
+            height: 525px;
+        }
+
+        form {
+            font-size: 1.2rem;
+            padding-left: 6px;
+            padding-top: 3px;
+            font-family: 'East Sea Dokdo', cursive;
+            font-family: 'Rowdies', cursive;
+            font-family: 'Rubik', sans-serif;
+
+        }
+        .btn{
+            cursor: pointer;
+
+        }
         
     </style>
 </head>
-<body>
-    <form action="#">
-        <div>
-            Name: <input type="text" placeholder="Sahitya Gupta">
-        </div>
 
-        <div>
-            Email: <input type="email" placeholder="abc@gmail.com">
-        </div>
-        <div>
-            Date of Birth: <input type="date" name="mydob" id="">
-        </div>
-        <div>
-            Are you 18+ ? : <input type="checkbox" name="18+" id=""> 
-        </div>
-        <div>
-            Male: <input type="radio" name="gender" id=""> 
-            Female: <input type="radio" name="gender" id=""> 
-            Other: <input type="radio" name="gender" id=""> 
-        </div>
-        <div>
-            Write a short Introduction :
+<body>
+    <div class="parent">
+
+        <form action="#">
+            <div>
+                Name: <input type="text" placeholder="Sahitya Gupta">
+            </div>
             <br>
-            <textarea name="mytext" id="" cols="30" rows="10" placeholder="I am working at XYZ Company. My profile was Developer......"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Submit Now">
-            <input type="reset" value="Reset Now">
-        </div>
-    </form>
+            <div>
+                Email: <input type="email" placeholder="abc@gmail.com">
+            </div>
+            <br>
+            <div>
+                Date of Birth: <input type="date" name="mydob" id="">
+            </div>
+            <br>
+            <div>
+                Are you 18+ ? 
+             <input type="checkbox" name="18+" id="">
+            </div>
+            <br>
+            <div>
+                Male: <input type="radio" name="gender" id="">
+                Female: <input type="radio" name="gender" id="">
+                Other: <input type="radio" name="gender" id="">
+            </div>
+            <br>
+            <div>
+                Write a short Introduction.
+                <br>
+                <textarea name="mytext" id="" cols="30" rows="10"
+                    placeholder="I am working at XYZ Company. My profile was Developer......"></textarea>
+            </div>
+            <br>
+            <div>
+                What's Your Favourite Color?
+                <input type="color" name="" id="">
+            </div>
+            <div class="btn">
+                <input type="submit" name="btn"  value="Submit Now">
+                <input type="reset"  name="btn" value="Reset Now">
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
