@@ -20,9 +20,10 @@
             width: 300px;
             margin: 100px auto;
             background-color: rgb(252, 252, 252);
-            box-shadow: 5px 7px 16px silver;
+            box-shadow: 5px 7px 16px dimgray;
             border-radius: 16px;
             height: 525px;
+            
         }
 
         form {
@@ -35,10 +36,20 @@
 
         }
         .btn{
-            cursor: pointer;
+            /* font-weight: bold; */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1.6px solid black;
+            border-radius: 6px;
 
         }
-        
+        .btn:hover{
+            font-size: 1rem;
+            background-color: darkslategray;
+            color: rgb(254, 255, 255);
+        }
+        form textarea{
+            border-radius: 6px;
+        }
     </style>
 </head>
 
@@ -80,9 +91,9 @@
                 What's Your Favourite Color?
                 <input type="color" name="" id="">
             </div>
-            <div class="btn">
-                <input type="submit" name="btn"  value="Submit Now">
-                <input type="reset"  name="btn" value="Reset Now">
+            <div>
+                <input type="submit" class="btn"  value="Submit Now">
+                <input type="reset"  class="btn" value="Reset Now">
             </div>
         </form>
     </div>
