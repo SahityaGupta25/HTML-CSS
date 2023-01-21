@@ -1,0 +1,25 @@
+.btn{
+    color: red;
+    background-color: yellow;
+    border-radius: 6.6px;
+    width: 66px;
+    height: 30px;
+    position: absolute;
+    top: 393px;
+    left: 750px;
+    font-weight: bolder;
+    
+}
+#heading{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 66;
+    
+
+}
+
+.btn:hover{
+    transition: 1s;
+    background-color: orange;
+    cursor: pointer;
+}
