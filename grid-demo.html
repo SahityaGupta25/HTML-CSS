@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(./Images/wheat.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .listhead{
+            display: grid;
+            grid-template-columns: 66px  96px  96px  96px  96px ;
+            grid-template-rows: 66px ;
+            row-gap:15px ;
+            column-gap: 30px;
+            text-align: center;
+        }
+        .container{
+            border: 5px solid rgb(0, 0, 0);
+            background-color: black;
+            border-radius: 34%;
+            
+        }
+        .navbar{
+            border: 15px solid yellow;
+            border-radius: 34%;
+        }
+        .listhead li{
+            border: 6px solid yellow;
+            border-radius: 49%;
+            padding-top: 16px;
+            color: yellow;
+            list-style: none;
+            font-weight: bold;
+            
+        }
+        .listhead li:hover{
+            font-family: cursive;
+            font-size: 2rem;
+            color: red;
+            border-color: red;
+        }
+        .listhead:hover{
+            grid-template-rows: 160px;
+            grid-template-columns: 166px  196px  196px  196px  196px ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="listhead">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Shop</li>
+                <li>Stores</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
