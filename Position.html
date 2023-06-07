@@ -9,20 +9,45 @@
 <style>
     .container{
         background-color: coral;
+        height: 400px;
+        width: 400px;
 
     }
     .box{
-        height: 100px;
-        width: 100px;
+        height: 60px;
+        width: 60px;
+        border: 5px solid black;
+        margin: 5px;
     }
+    .box-r{
+        position: relative;
+        left: 66px;
+        bottom: 16px;
+    }
+    .box-a{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .box-s{
+        position: sticky;
+        top: 50px;
+        left: 66px;
+    }
+    body{
+        height: 660vh;
+    }
+
+
+
 </style>
 <body>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
+        <div class="box box-r">relative</div>
+        <div class="box box-a">absolute</div>
+        <div class="box box-f">fixed</div>
+        <div class="box box-s">sticky</div>
+        <div class="box">static</div>
     </div>
 </body>
 </html>
